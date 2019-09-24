@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/camerasdk_main_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/camerasdk_actionbar" />
+
+    <com.temp.cam.camerasdk.view.CropImageView
+        android:id="@+id/cropImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        custom:cropMode="ratio_fit_image"
+        custom:frameColor="@color/camerasdk_frame"
+        custom:frameStrokeWeight="1dp"
+        custom:guideColor="@color/camerasdk_guide"
+        custom:guideShowMode="show_on_touch"
+        custom:guideStrokeWeight="1dp"
+        custom:handleColor="@color/camerasdk_handle"
+        custom:handleShowMode="show_always"
+        custom:handleSize="8dp"
+        custom:minFrameSize="50dp"
+        custom:overlayColor="@color/camerasdk_overlay"
+        custom:touchPadding="8dp" />
+
+
+    <RelativeLayout
+        android:id="@+id/content_container"
+        android:layout_width="match_parent"
+        android:layout_height="55dip"
+        android:background="@color/camerasdk_main_tools_bg">
+
+
+        <RadioGroup
+            android:id="@+id/layout_crop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/button9_16"
+                style="@style/camerasdk_radio_button"
+                android:background="@drawable/camerasdk_selector_crop_nine_sixteen"
+                android:checked="true" />
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/button4_3"
+                style="@style/camerasdk_radio_button"
+                android:background="@drawable/camerasdk_selector_crop_four_three" />
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/button1_1"
+                style="@style/camerasdk_radio_button"
+                android:background="@drawable/camerasdk_selector_crop_one_one" />
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/button3_4"
+                style="@style/camerasdk_radio_button"
+                android:background="@drawable/camerasdk_selector_crop_three_four" />
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/button16_9"
+                style="@style/camerasdk_radio_button"
+                android:background="@drawable/camerasdk_selector_crop_sixteen_nine" />
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+            <RadioButton
+                android:id="@+id/buttonfree"
+                style="@style/camerasdk_radio_button"
+                android:text="自由"
+                android:textColor="@color/color_text_click"/>
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </RadioGroup>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+

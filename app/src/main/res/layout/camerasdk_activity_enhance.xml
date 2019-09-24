@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/camerasdk_main_bg">
+
+    <include layout="@layout/camerasdk_actionbar"
+        android:id="@+id/enhance_top_title"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/camerasdk_main_tools_bg"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/enhance_bottom_tool">
+
+        <LinearLayout
+            android:id="@+id/content_container"
+            android:layout_width="match_parent"
+            android:layout_height="55dip"
+            android:background="@color/camerasdk_main_tools_bg"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:id="@+id/progress_degree"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/camera_white"
+                android:textSize="14sp" />
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:max="200"
+                android:progress="100"
+                android:thumb="@mipmap/camerasdk_icon_seek_thumb" />
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/fragment_adjust_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <RadioButton
+                android:id="@+id/fragment_radio_bright"
+                style="@style/ImageEditor_adjust_radiobutton"
+                android:drawableTop="@drawable/selector_image_edit_adjust_bright"
+                android:text="@string/edit_brightness" />
+
+            <RadioButton
+                android:id="@+id/fragment_radio_contrast"
+                style="@style/ImageEditor_adjust_radiobutton"
+                android:drawableTop="@drawable/selector_image_edit_adjust_contrast"
+                android:text="@string/edit_contrast" />
+
+            <RadioButton
+                android:id="@+id/fragment_radio_saturation"
+                style="@style/ImageEditor_adjust_radiobutton"
+                android:drawableTop="@drawable/selector_image_edit_adjust_saturation"
+                android:text="@string/edit_saturation" />
+
+
+            <RadioButton
+                android:id="@+id/fragment_radio_sharpness"
+                style="@style/ImageEditor_adjust_radiobutton"
+                android:drawableTop="@drawable/selector_image_edit_adjust_sharpness"
+                android:text="@string/edit_sharpness" />
+
+            <RadioButton
+                android:id="@+id/fragment_radio_exposure"
+                style="@style/ImageEditor_adjust_radiobutton"
+                android:drawableTop="@drawable/selector_image_edit_adjust_exposure"
+                android:text="@string/edit_exposure" />
+
+            <RadioButton
+                android:id="@+id/fragment_radio_hue"
+                style="@style/ImageEditor_adjust_radiobutton"
+                android:drawableTop="@drawable/selector_image_edit_adjust_exposure"
+                android:text="@string/edit_shadow" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/enhance_top_title"
+        android:layout_above="@+id/enhance_bottom_tool">
+
+        <com.temp.cam.camerasdk.library.filter.GPUImageView
+            android:id="@+id/gpu_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+
+</RelativeLayout>
+
+
+

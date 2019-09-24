@@ -1,0 +1,42 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/camerasdk_main_bg"
+    android:orientation="vertical">
+
+    <com.temp.cam.camerasdk.library.filter.GPUImageView
+        android:id="@+id/gpu_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dip"
+        android:layout_marginBottom="55dip"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dip"
+        android:background="@color/camerasdk_main_tools_bg"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:max="200"
+            android:progress="100"
+            android:thumb="@mipmap/camerasdk_icon_seek_thumb" />
+
+    </LinearLayout>
+
+    <include layout="@layout/camerasdk_actionbar" />
+
+
+</FrameLayout>
+
+
