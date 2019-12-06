@@ -53,5 +53,4 @@
 - EfectFragment: 呈现滤镜特效,具体方法文档中有详细注释
 
 ## <span id="预览">支持开源，如果项目有帮到你，给点捐助呗</span>
-![image](https://github.com/liuchaotclc/photoFilter/blob/master/img/IMG_5447.JPG)
-![image](https://github.com/liuchaotclc/photoFilter/blob/master/img/IMG_5460.JPG)
+![image](https://github.com/liuchaotclc/photoFilter/blob/master/img/IMG_5447.JPG)![image](https://github.com/liuchaotclc/photoFilter/blob/master/img/IMG_5460.JPG)
