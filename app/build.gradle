@@ -17,12 +17,7 @@ android {
             storeFile file("debug.keystore")
         }
 
-        release {
-            storeFile file("mfapp.jks")
-            storePassword "1e^SZSV2uIciV4vPhy#r"
-            keyAlias "mfapp"
-            keyPassword "1e^SZSV2uIciV4vPhy#r"
-        }
+
     }
 
     lintOptions {
@@ -34,12 +29,12 @@ android {
 
     buildTypes {
         debug {
-            signingConfig signingConfigs.release
+            signingConfig signingConfigs.debug
         }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.release
+            signingConfig signingConfigs.debug
         }
     }
 
