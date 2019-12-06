@@ -1,6 +1,7 @@
 # 源码导读
 
 ## <span id="工程概述">工程概述</span>
+支持多滤镜混合
 使用自定义相机(CameraActivity非系统相机)拍照，或者相册中选取图片(PhotoPickActivity)。选取图片后可进行滤镜(FilterImageActivity),调整(PhotoEnhanceActivity)等操作
 
 
