@@ -3,7 +3,8 @@
 ## <span id="工程概述">工程概述</span>
 支持多滤镜混合
 使用自定义相机(CameraActivity非系统相机)拍照，或者相册中选取图片(PhotoPickActivity)。选取图片后可进行滤镜(FilterImageActivity),调整(PhotoEnhanceActivity)等操作
-
+## <span id="预览">预览</span>
+![image](https://github.com/liuchaotclc/photoFilter/blob/master/img/shortcut.gif)
 
 ## <span id="总体流程">总体流程</span>
 
@@ -50,3 +51,7 @@
 - FilterImageActivity : 滤镜操作,所有滤镜效果缓存于EfectFragment的sCurrentFilterType变量中,获取滤镜算法通过PhotoEnhanceActivity的静态方法getFilterGroup。
 - PhotoEnhanceActivity：调节页面 缓存了调节的数值。
 - EfectFragment: 呈现滤镜特效,具体方法文档中有详细注释
+
+## <span id="预览">支持开源，如果项目有帮到你，给点捐助呗</span>
+![image](https://github.com/liuchaotclc/photoFilter/blob/master/img/IMG_5447.JPG)
+![image](https://github.com/liuchaotclc/photoFilter/blob/master/img/IMG_5460.JPG)
