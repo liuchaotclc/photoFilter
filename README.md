@@ -4,7 +4,7 @@
 支持多滤镜混合
 使用自定义相机(CameraActivity非系统相机)拍照，或者相册中选取图片(PhotoPickActivity)。选取图片后可进行滤镜(FilterImageActivity),调整(PhotoEnhanceActivity)等操作
 ## <span id="预览">预览</span>
-![image](https://github.com/liuchaotclc/photoFilter/blob/master/img/shortcut.gif)
+![image](https://github.com/liuchaotclc/videoedit/blob/master/images/shortcut.gif)
 
 ## <span id="总体流程">总体流程</span>
 
@@ -54,4 +54,4 @@
 
 ## <span id="预览">支持开源，如果项目有帮到你，给点捐助呗</span>
 
-![image](https://github.com/liuchaotclc/photoFilter/blob/master/img/IMG_5447.JPG)![image](https://github.com/liuchaotclc/photoFilter/blob/master/img/IMG_5460.JPG)
+![image](https://github.com/liuchaotclc/videoedit/blob/master/images/ic_pay_img.png)
